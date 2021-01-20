@@ -1,0 +1,33 @@
+.card {
+    width: 15em;
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+      0 2px 4px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem auto;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: rgb(17, 84, 228);
+  }
+  
+  .card-link:hover {
+    color:rgb(68, 175, 241);
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    border: 1px solid grey;
+    padding: 5px 10px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    font-weight: bold;
+  }

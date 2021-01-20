@@ -1,0 +1,61 @@
+.movie-list {
+    width: 70%;
+  }
+  
+  .movie-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+      0 2px 4px rgba(0, 0, 0, 0.24);
+  }
+  
+  .default-message {
+    font-size: 25px;
+    margin: 25px;
+  }
+  
+  .search {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    height: 3em;
+    border: none;
+    width: 50%;
+    outline: 1px solid rgb(224, 220, 220);
+    border-top-left-radius: 5% 50%;
+    border-top-right-radius: 5% 50%;
+    border-bottom-left-radius: 5% 50%;
+    border-bottom-right-radius: 5% 50%;
+  }
+  
+  input:focus {
+    outline: 1px solid #017afe;
+  }
+  
+  /* input[list]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  input::-webkit-list-button {
+    display: none;
+  } */
+  
+  .spinner {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #9cd4fd; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.8s linear infinite;
+    margin: 180px auto;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
