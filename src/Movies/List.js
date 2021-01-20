@@ -42,7 +42,7 @@ const List = props => {
         <DebounceInput minLength={2} debounceTimeout={300} placeholder="Search movie" onChange={onChangeSearch} />
     </div>
     {loading ? <div className="spinner"></div> : <div className="movie-results">
-        {movies.length ? movies.map(movie => (
+        {movies?.length ? movies.map(movie => (
           <div key={movie.imdbID}><MovieFeatures movie={movie} nomineesList={props.nomineesList} addToNomineesList={props.addToNomineesList} nominationFull={props.nominationFull} /></div>
         )) : responseString === "False" ? <div className='default-message'>No movies found</div> : <div className='default-message'>Type movie name above</div>}
       </div>}
